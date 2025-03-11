@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-color: #000;
+    color: #297038;
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+}
+
+#startup-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0px auto;
+    border: 1px transparent;
+    padding: 20px;
+    overflow-y: auto;
+    height: 60vh;
+    left: 0%;
+    position: absolute;
+    top: 0%;
+}
+
+.startup-line {
+    margin: 5px 0;
+    margin-top: 0;
+    font-family: monospace;
+
+}
+
+.warning {
+    color: yellow;
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+}
+
+.important {
+    color: cyan;
+
+}
+
+.time {
+    margin-top: 20px;
+}
+
+#cyber-os-display { /* Styles for the central Cyber-OS text */
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    text-shadow: none;
+    padding: 20px;
+    font-weight: bold;
+}
+
+
+/* One-time white glitch effect */
+@keyframes glitch {
+    0% { text-shadow: 4px 4px white, -4px -4px white; }
+    20% { text-shadow: -4px -4px white, 4px 4px white; }
+    40% { text-shadow: 3px -3px white, -3px 3px white;}
+    60% { text-shadow: -3px 3px white, 3px -3px white;}
+    80% { text-shadow: 5px 5px white, -5px -5px white;}
+    100% { text-shadow: none;}
+}
+
+
+
+/* Cyber-OS Text */
+#cyber-os-display {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    opacity: 0;
+    padding: 20px;
+    font-weight: bold;
+    border: 2px solid ;
+}
+
+/* Apply glitch effect */
+.glitch-effect {
+    animation: glitch 0.3s ease-in-out 1 forwards;
+}
+
+
